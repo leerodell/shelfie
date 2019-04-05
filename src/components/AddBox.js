@@ -12,6 +12,9 @@ class AddBox extends Component {
       task: []
     };
 
+    this.handleCancel = this.handleCancel.bind(this)
+
+  }
     handleCancel(id){
         axios.delete(`http://localhost:3000/api/delete/`)
         .then(resp => {

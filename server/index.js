@@ -2,7 +2,7 @@ const express = require ('express');
 const app = express();
 const bodyParser = require ('body-parser');
 const massive = require ('massive')
-const ctr = require('./controller')
+// const ctr = require('./controller')
 require("dotenv").config();
 app.use(bodyParser.json());
 
@@ -11,6 +11,8 @@ massive(process.env.CONNECTION_STRING).then(db => {
     db.init()
     console.log('connected to db')
 })
+
+// app.get('/api/inventory')
 
 
 

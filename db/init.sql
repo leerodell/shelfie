@@ -1,5 +1,5 @@
 -- initial data
-
+drop table if exists products;
 create table products (
 product_id serial primary key,
 product_name text not null,
