@@ -1,4 +1,4 @@
-initial data
+-- initial data
 
 create table products (
 product_id serial primary key,
